@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: #d53d3d;
+    background-color: #fff;
     color: var(--dark);
     line-height: 1.6;
 }
@@ -109,20 +109,24 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(255, 107, 139, 0.1) 0%, rgba(106, 90, 249, 0.1) 100%);
-    padding: 80px 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1187&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
     text-align: center;
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: var(--dark);
+    color: white;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: var(--gray);
+    color: #f0f0f0;
     max-width: 700px;
     margin: 0 auto 30px;
 }
@@ -193,8 +197,8 @@ nav ul li a:hover {
 }
 
 .product-img img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -384,6 +388,13 @@ textarea.form-control {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.cart-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cart-item-details {
@@ -585,50 +596,6 @@ footer {
     background-color: var(--danger);
 }
 
-/* Responsive Styles */
-@media (max-width: 992px) {
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        padding: 15px 0;
-    }
-
-    nav ul {
-        margin: 15px 0;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .checkout-form {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 576px) {
-    .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-    .stakeholder-tabs {
-        flex-direction: column;
-    }
-
-    .tab-btn {
-        width: 100%;
-        text-align: center;
-    }
-}
 /* Retailer Dashboard Styles */
 .retailer-login {
     background-color: white;
@@ -680,11 +647,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .product-management-img img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -720,45 +688,31 @@ footer {
     margin-top: 20px;
 }
 
-/* Retailer icon in header */
-.retailer-icon {
-    position: relative;
-}
-
-.retailer-panel {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    min-width: 200px;
-    display: none;
-    z-index: 1000;
-}
-
-.retailer-panel.active {
-    display: block;
-}
-
-.retailer-panel a {
-    display: block;
-    padding: 10px 0;
-    color: var(--dark);
-    text-decoration: none;
-    border-bottom: 1px solid #eee;
-}
-
-.retailer-panel a:last-child {
-    border-bottom: none;
-}
-
-.retailer-panel a:hover {
-    color: var(--primary);
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav ul {
+        margin: 15px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .checkout-form {
+        grid-template-columns: 1fr;
+    }
+    
     .dashboard-header {
         flex-direction: column;
         gap: 15px;
@@ -772,5 +726,24 @@ footer {
     
     .action-buttons {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .stakeholder-tabs {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
     }
 }

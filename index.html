@@ -134,93 +134,94 @@
             </div>
         </div>
     </section>
-        <!-- Retailer Dashboard Section -->
-        <section id="retailer-dashboard" class="stakeholder-section" style="background-color: #e9f7fe;">
-            <div class="container">
-                <h2 class="section-title">Retailer Dashboard</h2>
-                <div class="retailer-login">
-                    <div class="login-form">
-                        <h3>Retailer Login</h3>
-                        <form id="retailer-login-form">
-                            <div class="form-group">
-                                <label for="retailer-username">Username</label>
-                                <input type="text" class="form-control" id="retailer-username" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="retailer-password">Password</label>
-                                <input type="password" class="form-control" id="retailer-password" required>
-                            </div>
-                            <button type="submit" class="btn">Login</button>
-                        </form>
-                    </div>
-                </div>
-                
-                <div class="retailer-dashboard-content" id="retailer-dashboard-content" style="display: none;">
-                    <div class="dashboard-header">
-                        <h3>Product Management</h3>
-                        <button class="btn" id="add-product-btn">Add New Product</button>
-                    </div>
-                    
-                    <div class="products-management">
-                        <table class="products-table">
-                            <thead>
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Product Name</th>
-                                    <th>Category</th>
-                                    <th>Price</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody id="products-management-list">
-                                <!-- Products will be dynamically loaded here -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
     
-        <!-- Add/Edit Product Modal -->
-        <div class="modal" id="product-modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="product-modal-title">Add New Product</h3>
-                    <button class="close-btn" id="close-product-modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form id="product-form">
+    <!-- Retailer Dashboard Section -->
+    <section id="retailer-dashboard" class="stakeholder-section" style="background-color: #e9f7fe;">
+        <div class="container">
+            <h2 class="section-title">Retailer Dashboard</h2>
+            <div class="retailer-login">
+                <div class="login-form">
+                    <h3>Retailer Login</h3>
+                    <form id="retailer-login-form">
                         <div class="form-group">
-                            <label for="product-name">Product Name</label>
-                            <input type="text" class="form-control" id="product-name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="product-category">Category</label>
-                            <select class="form-control" id="product-category" required>
-                                <option value="">Select Category</option>
-                                <option value="Skincare">Skincare</option>
-                                <option value="Makeup">Makeup</option>
-                                <option value="Fragrance">Fragrance</option>
-                                <option value="Hair Care">Hair Care</option>
-                                <option value="Bath & Body">Bath & Body</option>
-                            </select>
+                            <label for="retailer-username">Username</label>
+                            <input type="text" class="form-control" id="retailer-username" required>
                         </div>
                         <div class="form-group">
-                            <label for="product-price">Price ($)</label>
-                            <input type="number" class="form-control" id="product-price" step="0.01" min="0" required>
+                            <label for="retailer-password">Password</label>
+                            <input type="password" class="form-control" id="retailer-password" required>
                         </div>
-                        <div class="form-group">
-                            <label for="product-image">Image URL</label>
-                            <input type="url" class="form-control" id="product-image" required>
-                        </div>
-                        <div class="form-actions">
-                            <button type="submit" class="btn" id="save-product-btn">Save Product</button>
-                            <button type="button" class="btn btn-secondary" id="cancel-product-btn">Cancel</button>
-                        </div>
+                        <button type="submit" class="btn">Login</button>
                     </form>
                 </div>
             </div>
+            
+            <div class="retailer-dashboard-content" id="retailer-dashboard-content" style="display: none;">
+                <div class="dashboard-header">
+                    <h3>Product Management</h3>
+                    <button class="btn" id="add-product-btn">Add New Product</button>
+                </div>
+                
+                <div class="products-management">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products-management-list">
+                            <!-- Products will be dynamically loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Add/Edit Product Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="product-modal-title">Add New Product</h3>
+                <button class="close-btn" id="close-product-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="product-form">
+                    <div class="form-group">
+                        <label for="product-name">Product Name</label>
+                        <input type="text" class="form-control" id="product-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-category">Category</label>
+                        <select class="form-control" id="product-category" required>
+                            <option value="">Select Category</option>
+                            <option value="Skincare">Skincare</option>
+                            <option value="Makeup">Makeup</option>
+                            <option value="Fragrance">Fragrance</option>
+                            <option value="Hair Care">Hair Care</option>
+                            <option value="Bath & Body">Bath & Body</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price">Price ($)</label>
+                        <input type="number" class="form-control" id="product-price" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-image">Image URL</label>
+                        <input type="url" class="form-control" id="product-image" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn" id="save-product-btn">Save Product</button>
+                        <button type="button" class="btn btn-secondary" id="cancel-product-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Cart Modal -->
     <div class="modal" id="cart-modal">
@@ -351,7 +352,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Glamour Cosmetics</h3>
+                    <h3>Blushing Beauty Cosmetics</h3>
                     <p>Your destination for premium beauty products that enhance your natural beauty with ethically sourced ingredients.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>

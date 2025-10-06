@@ -1,60 +1,60 @@
-/// Sample product data
+// Sample product data with online images
 let products = [
     {
         id: 1,
-        name: "Nivea Men and women ",
+        name: "Nivea Men and Women Moisturizer",
         price: 135.00,
         category: "Skincare",
-        image: "s-960.jpg"
+        image: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
         id: 2,
-        name: "BB clear",
+        name: "BB Clear Foundation",
         price: 50.00,
         category: "Makeup",
-        image: "https://via.placeholder.com/300x300?text=Lipstick"
+        image: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
         id: 3,
-        name: "kiss beauty",
+        name: "Kiss Beauty Lipstick Set",
         price: 50.00,
         category: "Makeup",
-        image: "https://via.placeholder.com/300x300?text=Mascara"
+        image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
         id: 4,
-        name: "Miss white",
+        name: "Miss White Face Serum",
         price: 260.00,
         category: "Skincare",
-        image: "https://via.placeholder.com/300x300?text=Face+Cream"
+        image: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
         id: 5,
-        name: "Rasasi sprays",
+        name: "Rasasi Perfume Sprays",
         price: 75.00,
         category: "Fragrance",
-        image: "https://via.placeholder.com/300x300?text=Perfume"
+        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
         id: 6,
-        name: "Lemon Clear",
+        name: "Lemon Clear Cleanser",
         price: 150.00,
         category: "Skincare",
-        image: "https://via.placeholder.com/300x300?text=Cleansing+Oil"
+        image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
         id: 7,
         name: "Eyeshadow Palette - Earth Tones",
         price: 45.00,
         category: "Makeup",
-        image: "https://via.placeholder.com/300x300?text=Eyeshadow"
+        image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
         id: 8,
-        name: "mouldin gel",
+        name: "Mouldin Hair Gel",
         price: 95.00,
         category: "Hair Care",
-        image: "https://via.placeholder.com/300x300?text=Hair+Mask"
+        image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     }
 ];
 
